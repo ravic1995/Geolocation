@@ -1,0 +1,37 @@
+﻿<!-- Copyright (c) 2012 Mobile Developer Solutions -->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+        <title>::: ItSoft777 ::: GeoBus</title>
+        <link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="index.css" /> 
+        <script src="jquery.mobile/jquery.js"></script>
+        <script src="jquery.mobile/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="linea.js"></script>
+    </head>
+  
+    <body onload="completeData();">
+	    <div data-role="page" id="page-parada" class="type-interior" data-theme="b">
+	        <div data-role="header" data-theme="b">
+		        <h1>::: ItSoft777 ::: Geolocalización</h1>
+ 		        <a href="index.html" data-icon="home" data-iconpos="notext" id="intro" data-ajax="false" class="ui-btn-right">Inicio</a>
+	        </div>
+	        <div data-role="content" data-theme="c">			
+		        <h2>Seleccione Parada</h2>
+                <blockquote>
+  			        <p>Seleccione la parada de la empresa <code><label id="lblEmpresa" class="labelsDestacados"></label></code>, línea <code><label id="lblLinea" class="labelsDestacados"></label></code></p>
+		        </blockquote>
+                <h4><a href="gps.html" data-role="button" data-inline="true" data-ajax="false" data-theme="b">BUSCAR CON GPS</a></h4>
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="Parada.html?parada=10&emp20junio" data-ajax="true">Parada 10 <span class="ui-li-count">10</span></a></li>
+                    <li><a href="Resultado.html?parada=9&emp=eltriunfo" data-ajax="true">Parada 9 <span class="ui-li-count">9</span></a></li>
+                </ul>
+	        </div>
+	        <div data-role="footer" data-position="fixed" class="footer-docs" data-theme="b">
+		        <p>&copy; 2013 ItSoft777</p>
+	        </div>	
+	    </div>
+    </body>
+</html>

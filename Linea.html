@@ -1,0 +1,36 @@
+﻿<!-- Copyright (c) 2012 Mobile Developer Solutions -->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+        <title>::: ItSoft777 ::: GeoBus</title>
+        <link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="index.css" /> 
+        <script src="jquery.mobile/jquery.js"></script>
+        <script src="jquery.mobile/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="linea.js"></script>
+    </head>
+  
+    <body onload="completeData();">
+	    <div data-role="page" id="page-linea" class="type-interior" data-theme="b">
+	        <div data-role="header" data-theme="b">
+		        <h1>::: ItSoft777 ::: Geolocalización Bus</h1>
+ 		        <a href="index.html" data-icon="home" data-iconpos="notext" data-ajax="false" id="intro" class="ui-btn-right">Inicio</a>
+	        </div>
+	        <div data-role="content" data-theme="c">			
+		        <h2>Seleccione Línea</h2>
+                <blockquote>
+  			        <p>Seleccione línea de la Empresa de transporte <code><label id="lblEmpresa" class="labelsDestacados" ></label></code></p>
+		        </blockquote>
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="Parada.html?emp=20junio&nom=20 de Junio&lin=26A" data-ajax="false">Línea 26A</a></li>
+                    <li><a href="Parada.html?emp=eltriunfo&nom=20 de Junio&lin=26" data-ajax="false">Línea 26</a></li>
+                </ul>
+	        </div>
+	        <div data-role="footer" data-position="fixed" class="footer-docs" data-theme="b">
+		        <p>&copy; 2014 ItSoft777</p>
+	        </div>	
+	    </div>
+    </body>
+</html>
